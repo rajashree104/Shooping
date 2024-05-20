@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="../css.html"><button>Back</button></a>
+    <center><h1>mediaquery</h1></center>
+    <style>
+        .box{
+            display: none;
+            background-color: blue;
+            font-size: 30px;
+            color: black;
+        }
+        @media (max-width:500px){
+            #box-1{
+                display: block;
+                background-color: blueviolet;
+                color: chocolate;
+        
+        }
+        }
+@media (min-width:501px) and (max-width:700px){
+    #box-2{
+        display: block;
+        background-color: pink;
+        color: brown;
+    }
+}
+@media (min-width:701px) and (max-width:900px){
+    #box-3{
+        display: block;
+        background-color: green;
+        color: chartreuse;
+    }
+}
+@media (min-width:901px){
+    #box-4{
+        display: block;
+        background-color: red;
+        color: bisque;
+    }
+}
+
+    </style>
+    <div class="box" id="box-1">mobile screen 0 to 500px</div>
+    <div class="box" id="box-2">tab screen 501 to 700px</div>
+    <div class="box" id="box-3">desktop screen 701 px to 900px</div>
+    <div class="box" id="box-4">large screen starts 901</div>
+    
+    
+</body>
+</html>

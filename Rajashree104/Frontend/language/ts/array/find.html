@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="../ts.html"><button>Back</button></a>
+    <center><h1>Find</h1></center>
+
+    <script>
+        let list=[
+            {name:"ball",price:500,company:"tata"},
+            {name:"tap",price:600,company:"bajaj"},
+            {name:"fan",price:800,company:"usha"},
+            {name:"ball",price:580,company:"tata"}
+        
+        ]
+        let data=list.filter((room)=>{return room.name=="ball"})
+        console.log(data)
+    </script>
+</body>
+</html>

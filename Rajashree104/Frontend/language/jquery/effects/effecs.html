@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="
+https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
+"></script>
+
+
+</head>
+<body bgcolor="pink">
+    <center> <img src="b1.jpg" alt="">
+        <img src="b2.jpg" alt=""><br><br>
+        <button id="hide"> hide</button>
+        <button id="show"> show</button></center>
+    
+
+    <script>
+    $(document).ready(function(){
+  $("#hide").click(function(){
+    $("img").hide(1000);
+  });
+  $("#show").click(function(){
+    $("img").show(1000);
+  });
+});
+    </script>
+
+
+
+
+</body>
+</html>

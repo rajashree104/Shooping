@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <a href="../ts.html"><button>back</button></a>
+  
+    <center>
+        <h1>Random Week</h1>
+        <h2 id="root"></h2>
+        <button onclick="week()">click</button>
+    </center>
+    <script>
+        function week(){
+            let random=Math.floor(Math.random()*7+1)
+                let data= document.getElementById('root')
+                switch(random){
+                    case 1:
+                     data.innerHTML="monday"
+                     break;
+                     case 2:
+                     data.innerHTML="tuesday"
+                     break;
+                     case 3:
+                     data.innerHTML="wednesday"
+                     break;
+                     case 4:
+                     data.innerHTML="thrusday"
+                     break;
+                     case 5:
+                     data.innerHTML="friday"
+                     break;
+                     case 6:
+                     data.innerHTML="saturday"
+                     break;
+                     case 7:
+                     data.innerHTML="sunday"
+                     break;   
+                }
+        }
+    </script>
+</body>
+</html>

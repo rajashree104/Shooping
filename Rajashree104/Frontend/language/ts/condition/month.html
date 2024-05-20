@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <a href="../ts.html"><button>Back</button></a>
+    <center>
+        <h1>Random Month</h1>
+        <h2 id="root"></h2>
+        <button onclick="month()">Click</button>
+    </center>
+    <script>
+        function month(){
+            let random=Math.floor(Math.random()*12+1)
+                let data=document.getElementById('root')
+                switch(random){
+                    case 1:
+                    data.innerHTML="january"  
+                    break;
+                    case 2:
+                    data.innerHTML="february"
+                    break;
+                    case 3:
+                    data.innerHTML="march"
+                    break;
+                    case 4:
+                    data.innerHTML="april"
+                    break;
+                    case 5:
+                    data.innerHTML="may"
+                    break;
+                    case 6:
+                    data.innerHTML="june"
+                    break;
+                    case 7:
+                    data.innerHTML="july"
+                    break;
+                    case 8:
+                    data.innerHTML="august"
+                    break;
+                    case 9:
+                    data.innerHTML="september"
+                    break;
+                    case 10:
+                    data.innerHTML="october"
+                    break;
+                    case 11:
+                    data.innerHTML="november"
+                    break;
+                    case 12:
+                    data.innerHTML="december"
+                    break;
+                }
+        }
+    </script>
+</body>
+</html>
